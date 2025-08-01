@@ -30,4 +30,11 @@ public class Cart {
     private String cartId;
     private CartData cartData;
     private UserDetails userDetails;
+    private LocalDateTime lastUpdated;
+
+    @PrePersist
+    @PreUpdate
+    public void updateTimestamp() {
+        this.lastUpdated = LocalDateTime.now();
+    }
 } 

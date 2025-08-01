@@ -73,7 +73,9 @@ logging:
           starttls:
             enable: true
 
-  twilio:
-    accountSid: your_twilio_account_sid
-    authToken: your_twilio_auth_token
-    fromNumber: +1234567890
+#  twilio:
+#    accountSid: your_twilio_account_sid
+#    authToken: your_twilio_auth_token
+#    fromNumber: +1234567890
+huggingface:
+  api-key: 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
