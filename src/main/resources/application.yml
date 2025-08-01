@@ -1,7 +1,13 @@
 spring:
   application:
     name: smart-cart-reminder
-  
+
+  data:
+    mongodb:
+      host: localhost
+      port : 27017
+      database : smartcart
+
   datasource:
     url: jdbc:h2:mem:smartcart
     driverClassName: org.h2.Driver
@@ -50,7 +56,6 @@ smart-cart:
     quiet-hours:
       start: "22:00"
       end: "08:00"
-
 logging:
   level:
     com.smartcart: DEBUG
