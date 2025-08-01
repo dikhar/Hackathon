@@ -36,11 +36,5 @@ public class NotificationScheduler {
                 }
             }
         }
-        public void sendDailyNotification() {
-        // Send Email
-        emailService.sendEmail();
-
-        // Send SMS
-        //smsService.sendSms();
     }
 }
