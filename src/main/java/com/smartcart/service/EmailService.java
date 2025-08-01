@@ -13,8 +13,8 @@ public class EmailService {
 
     public void sendEmail() {
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setFrom("your-email@gmail.com");
-        message.setTo("abc@gmail.com");
+        message.setFrom("shivanshv4@gmail.com");
+        message.setTo("shivansh.vaish@telekom-digital.com");
         message.setSubject("Daily Reminder");
         message.setText("Good morning! This is your daily reminder.");
         mailSender.send(message);

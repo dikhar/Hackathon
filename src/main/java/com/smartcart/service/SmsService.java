@@ -24,10 +24,10 @@ public class SmsService {
         Twilio.init(accountSid, authToken);
     }
 
-    public void sendSms() {
+    public void sendSms(String toPhoneNumber, String message) {
         Message.creator(
-            new PhoneNumber("+1234567890"), // Replace with the recipient's phone number
-            new PhoneNumber("+0987654321"), // Replace with your Twilio phone number
+            new PhoneNumber(toPhoneNumber), // Replace with the recipient's phone number
+            new PhoneNumber(fromNumber), // Replace with your Twilio phone number
             "message"
         ).create();
     }
