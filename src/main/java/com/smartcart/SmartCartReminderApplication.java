@@ -1,0 +1,14 @@
+package com.smartcart;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
+
+@SpringBootApplication
+@EnableScheduling
+public class SmartCartReminderApplication {
+    
+    public static void main(String[] args) {
+        SpringApplication.run(SmartCartReminderApplication.class, args);
+    }
+} 
