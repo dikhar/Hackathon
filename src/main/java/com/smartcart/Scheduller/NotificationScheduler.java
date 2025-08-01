@@ -21,6 +21,6 @@ public class NotificationScheduler {
         emailService.sendEmail();
 
         // Send SMS
-        smsService.sendSms();
+        //smsService.sendSms();
     }
 }
