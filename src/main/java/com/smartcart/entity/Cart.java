@@ -24,8 +24,10 @@ import java.util.List;
 
 @Data
 @Builder
+@NoArgsConstructor
 @AllArgsConstructor
 public class Cart {
+    private String cartId;
     private CartData cartData;
     private UserDetails userDetails;
 } 
