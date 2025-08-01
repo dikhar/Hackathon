@@ -28,4 +28,5 @@ import java.util.List;
 public class Cart {
     private CartData cartData;
     private UserDetails userDetails;
+    //
 } 
