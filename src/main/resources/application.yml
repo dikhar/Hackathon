@@ -31,8 +31,8 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: ${MAIL_USERNAME:your-email@gmail.com}
-    password: ${MAIL_PASSWORD:your-app-password}
+    username: shivanshv4@gmail.com
+    password: qzxykcytqvrjrxin
     properties:
       mail:
         smtp:
@@ -61,21 +61,16 @@ logging:
     com.smartcart: DEBUG
     org.springframework.web: INFO
     org.hibernate: INFO
-  mail:
-    host: smtp.gmail.com
-    port: 587
-    username: your-email@gmail.com
-    password: your-password
-    properties:
-      mail:
-        smtp:
-          auth: true
-          starttls:
-            enable: true
+twilio:
+  accountSid: AC0e14c47b8629c3db7554363cec2c42d7
+  authToken: 3115d7d1c8c8ae12112aa7ce2db8f380
+  fromNumber: +918175929894
 
-#  twilio:
-#    accountSid: your_twilio_account_sid
-#    authToken: your_twilio_auth_token
-#    fromNumber: +1234567890
+fast2sms.api.key: crb8qAvg1jGNEs3TFMS9pdPfyOa56WUxYZXLnHtmoCzuRi0KehhpLQfB1VP9kGlIKmWTy34DsMYHZq7U
+fast2sms.base.url: https://www.fast2sms.com/dev/bulkV2
+fast2sms.sender_id: FSTSMS
+fast2sms.language: english
+fast2sms.route: qt
+fast2sms.flash: 0
 huggingface:
   api-key: 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
