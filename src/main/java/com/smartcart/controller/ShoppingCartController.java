@@ -1,23 +1,23 @@
 package com.smartcart.controller;
 
+import com.smartcart.entity.Cart;
 import java.util.List;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.smartcart.entity.Cart;
-import com.smartcart.service.ShoppingCartService;
+
+import static com.smartcart.commonConstant.CommonConstant.Main_URL;
+import static com.smartcart.commonConstant.CommonConstant.SC_GET_URL;
+import static com.smartcart.commonConstant.CommonConstant.SC_POST_URL;
 
 @RestController
-@RequestMapping("/api/v1/shopping-cart")
-public class ShoppingCartController {
-    private final ShoppingCartService shoppingCartService;
+@RequestMapping(Main_URL)
+public interface ShoppingCartController {
+    @GetMapping(SC_GET_URL)
+    List<Cart> getShoppingCart();
 
-    public ShoppingCartController(ShoppingCartService shoppingCartService) {
-        this.shoppingCartService = shoppingCartService;
-    }
-
-    @GetMapping("/items")
-    public List<Cart> shoppingCart() {
-        return shoppingCartService.getCartItems();
-    }
+    @PostMapping(SC_POST_URL)
+    String createShoppingCart(@RequestBody Cart cart);
 }
