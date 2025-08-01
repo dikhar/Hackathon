@@ -10,7 +10,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CartData {
-    private String cartId;
+    private String cartItemId;
     private String itemName;
     private Integer counter;
+    private String url;
+    private Integer totalPrice;
 }

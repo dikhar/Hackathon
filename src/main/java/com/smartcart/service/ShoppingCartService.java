@@ -1,19 +1,11 @@
 package com.smartcart.service;
 
-import java.util.List;
-import org.springframework.stereotype.Service;
 import com.smartcart.entity.Cart;
-import com.smartcart.repository.ShoppingCartRepo;
+import com.smartcart.entity.CartData;
+import java.util.List;
 
-@Service
-public class ShoppingCartService {
-    private final ShoppingCartRepo shoppingCartRepo;
+public interface ShoppingCartService {
 
-    public ShoppingCartService(ShoppingCartRepo shoppingCartRepo) {
-        this.shoppingCartRepo = shoppingCartRepo;
-    }
-
-    public List<Cart> getCartItems() {
-        return shoppingCartRepo.findAll();
-    }
+    List<CartData> getCartItems();
+    String createCartItems(List<Cart> cartList);
 }

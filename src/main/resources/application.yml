@@ -72,3 +72,5 @@ fast2sms.sender_id: FSTSMS
 fast2sms.language: english
 fast2sms.route: qt
 fast2sms.flash: 0
+huggingface:
+  api-key: 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
